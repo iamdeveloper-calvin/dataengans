@@ -60,4 +60,50 @@ Copy sql statement from the 3 scripts and run them. Make sure each statement end
 
 ## Section 4: Charts and API
 
+Prototype solution is implemented using Flask and Chart.js
+https://www.chartjs.org/
+
+The data are fetched from https://api.covid19api.com on application first load
+
+Because the daily data point are too many for display, therefore I took the approach to present only 1 number, final accumulated cases for the month.
+
+2 charts are presented, a Bar Chart and a Line Chart
+
+Command to  start the application 
+>> docker-compose up --build
+
+You will see the following output on your terminal
+
+Building dataengdashboard
+[+] Building 0.2s (9/9) FINISHED                                                                                                                                                     
+ => [internal] load build definition from Dockerfile                                                                                                                            0.0s
+ => => transferring dockerfile: 36B                                                                                                                                             0.0s
+ => [internal] load .dockerignore                                                                                                                                               0.0s
+ => => transferring context: 2B                                                                                                                                                 0.0s
+ => [internal] load metadata for docker.io/library/python:3.8                                                                                                                   0.0s
+ => [1/4] FROM docker.io/library/python:3.8                                                                                                                                     0.0s
+ => [internal] load build context                                                                                                                                               0.0s
+ => => transferring context: 368B                                                                                                                                               0.0s
+ => CACHED [2/4] WORKDIR /app                                                                                                                                                   0.0s
+ => CACHED [3/4] COPY * /app/                                                                                                                                                   0.0s
+ => CACHED [4/4] RUN pip3 install -r requirements.txt                                                                                                                           0.0s
+ => exporting to image                                                                                                                                                          0.0s
+ => => exporting layers                                                                                                                                                         0.0s
+ => => writing image sha256:ff7c25a3d4055806de3f45d73bec60dae981777b84327a34d2fa1247e827c05d                                                                                    0.0s
+ => => naming to docker.io/library/section3_dataengdashboard                                                                                                                    0.0s
+Successfully built ff7c25a3d4055806de3f45d73bec60dae981777b84327a34d2fa1247e827c05d
+Starting section3_dataengdashboard_1 ... done
+Attaching to section3_dataengdashboard_1
+dataengdashboard_1  |  * Serving Flask app "./app.py" (lazy loading)
+dataengdashboard_1  |  * Environment: production
+dataengdashboard_1  |    WARNING: This is a development server. Do not use it in a production deployment.
+dataengdashboard_1  |    Use a production WSGI server instead.
+dataengdashboard_1  |  * Debug mode: on
+dataengdashboard_1  |  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+dataengdashboard_1  |  * Restarting with stat
+dataengdashboard_1  |  * Debugger is active!
+dataengdashboard_1  |  * Debugger PIN: 284-474-476
+
+Open a browser with the url to http://127.0.0.1:5000
+
 ## Section 5: Machine Learning
