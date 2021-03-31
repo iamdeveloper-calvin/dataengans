@@ -107,3 +107,16 @@ dataengdashboard_1  |  * Debugger PIN: 284-474-476
 Open a browser with the url to http://127.0.0.1:5000
 
 ## Section 5: Machine Learning
+
+Using the dataset from https://archive.ics.uci.edu/ml/datasets/Car+Evaluation
+The dataset is converted using convert.py to car_converted.csv
+
+All the data are placed in folder data
+
+common.py contains the mapping used for the conversion of dataset to number
+
+ml.py is the main application containing the logic to the ML model. 
+
+The model is a Decision Tree
+
+For the solution to work, please read the readme.txt for addition packages to be installed.

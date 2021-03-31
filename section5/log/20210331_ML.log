@@ -1,0 +1,8 @@
+2021-03-31 11:23:00,628 DEBUG Start
+2021-03-31 11:23:00,632 DEBUG    buying  maint  doors  persons  lug_boot  safety      values
+0       4      4      2        2         1       1  Unaccepted
+1       4      4      2        2         1       2  Unaccepted
+2       4      4      2        2         1       3  Unaccepted
+3       4      4      2        2         2       1  Unaccepted
+4       4      4      2        2         2       2  Unaccepted
+2021-03-31 11:23:00,647 INFO ['Unaccepted']
