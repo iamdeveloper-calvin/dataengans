@@ -58,6 +58,18 @@ Copy sql statement from the 3 scripts and run them. Make sure each statement end
 
 ## Section 3: System Design
 
+Proposed architecture submitted. 
+1. dataengans_section1.pptx
+2. dataengans_section1.pdf
+
+Assuming the company is having existing Kafka Application and Cluster running on AWS. 
+The new image uploading web application is proposed to host on AWS as well. 
+The images uploaded to flow to Amazon S3, ready to be picked up by existing Image processing application for processing and produce Kafka streams into the Kafka Cluster. 
+The images can be kept in Amazon S3 for unless 7 days. Depending on the archival policy, Awmazon Glacier can be considered for moving og images from S3 to Glacier.
+As for business intelligence requirement, the company can adopt solutions like Tableau, Amazon Quicksight, Qlikview to connect to the Kafka Cluster using connectors.
+For specialized requirements, bespoke dashboard can also be built using programming languages like Java, Python, etc.
+  
+
 ## Section 4: Charts and API
 
 Prototype solution is implemented using Flask and Chart.js
